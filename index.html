@@ -578,12 +578,32 @@
         .footer-section a {
             color: #ffffff;
             text-decoration: none;
-            display: block;
             margin: 0.5rem 0;
+        }
+
+        /* New styles for social media links container */
+        .footer-social-links {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footersocial-links a {
+            display: block;
+            padding: 0.25rem 0;
         }
 
         .footer-section a:hover {
             color: #3498db;
+        }
+
+        /* Media query for mobile devices */
+        @media screen and (max-width: 768px) {
+            .footer-section {
+                text-align: left;
+                width: 100%;
+                min-width: auto;
+                padding: 0 1rem;
+            }
         }
     </style>
 </head>
@@ -689,7 +709,8 @@
         </section>
 
         <div class="summary">
-            Security-focused software engineer with expertise in cybersecurity analysis, data engineering, and backend
+            Security-focused software engineer with expertise in cybersecurity analysis, data engineering, and
+            backend
             development. Combines technical proficiency in threat mitigation, data pipeline architecture, and
             PHP/Laravel
             development to deliver secure, scalable solutions. Certified IBM Business Analyst and Project Manager with
@@ -923,6 +944,7 @@
             <div class="footer-section">
                 <h4>Social Media</h4>
                 <a href="https://linkedin.com/in/abdelrahman4096telbani" target="_blank">LinkedIn</a>
+                <br>
                 <a href="https://github.com/Abdelrahman4096" target="_blank">GitHub</a>
             </div>
             <div class="footer-section">
